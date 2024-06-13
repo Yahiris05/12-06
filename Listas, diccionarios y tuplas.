@@ -1,0 +1,43 @@
+#1.Filtrar elementos: Utiliza listas y comprensiones para filtrar elementos basados en ciertos criterios. Por ejemplo, puedes filtrar una lista de números para obtener solo los números pares o impares, o filtrar una lista de cadenas para obtener solo las que contengan ciertas letras.
+# Operaciones matemáticas: Utiliza listas o tuplas para realizar operaciones matemáticas en conjuntos de datos. Por ejemplo, puedes sumar los elementos de una lista, obtener el producto de una tupla o calcular la media de una lista de números.
+#Acceder y modificar elementos: Utiliza índices para acceder a elementos específicos en listas, tuplas o diccionarios. También puedes modificar los valores de los elementos si es necesario.
+
+print("\n\n----- Primera Parte -----\n\n")
+numeros = [1, 3, 4, 6, 7, 7, 6, 12, 24, 78, 100, 123]
+print("Lista:", numeros)
+
+
+multiplos_tres = [n for n in numeros if n % 3 == 0]
+print("\nLista filtrada (Solo múltiplos de 3):", multiplos_tres)
+
+print("\n\n----- Segunda Parte -----\n\n")
+
+
+suma_numeros = sum(numeros)
+producto_numeros = 1
+for n in numeros:
+    producto_numeros *= n
+
+print(f"El producto es: {producto_numeros}\nLa suma es: {suma_numeros}\nLa media es: {suma_numeros / len(numeros)}")
+
+print("\n\n----- Tercera Parte -----\n\n")
+
+
+dias = {1: "Lunes", 2: "Martes", 3: "Miércoles", 4: "Jueves", 5: "Viernes", 6: "Viernes"}
+print("----- Diccionarios -----\n\n")
+print("Días de la semana (mal formateados):", dias)
+
+
+dias[7] = "Domingo"
+dias[6] = "Sábado"
+print("Días de la semana (arreglados):", dias)
+
+print("\n\n----- Listas -----\n\n")
+print("Acceder a los elementos del 6 al penúltimo:", numeros[5:-1])
+numeros[5] = 10000
+print("Lista modificada (6to elemento es 10000):", numeros)
+
+print("\n\n----- Tuplas -----\n\n")
+tupla_num = (1, 2, 3, 4, 5, 6, 7, 10)
+print("Tupla:", tupla_num)
+print("Segundo elemento de la tupla:", tupla_num[1])
